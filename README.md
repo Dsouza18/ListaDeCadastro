@@ -91,7 +91,7 @@ Siga as instruções fornecidas pelo comando flutter doctor para instalar quaisq
 
 Código: lib/components/user_tile.dart
 
-dart
+``` dart
 Copy code
 
 import 'package:flutter/cupertino.dart';
@@ -165,41 +165,43 @@ child: Text('Confirmar'),
 }
 }
 
+```
+
 2. UsersProvider
    UsersProvider é a classe que gerencia a lista de usuários. Ela fornece métodos para adicionar, editar e excluir usuários.
 
 Código: lib/provider/users.dart
 
-dart
-Copy code
-
+``` dart
 import 'dart:math';
 
 import 'package:flutter/cupertino.dart';
 import 'package:lista_de_cadastro/data/dummy_users.dart';
 import 'package:lista_de_cadastro/user.dart';
 
-class UsersProvider with ChangeNotifier{
-final Map<String, User> _items = {...DUMMY_USERS};
+class UsersProvider with ChangeNotifier {
+  final Map<String, User> _items = {...DUMMY_USERS};
 
-List<User> get all{
-return [..._items.values];
-}
+  List<User> get all {
+    return [..._items.values];
+  }
 
-int get count{
-return _items.length;
-}
+  int get count {
+    return _items.length;
+  }
 
-User byIndex(int i){
-return _items.values.elementAt(i);
-}
+  User byIndex(int i) {
+    return _items.values.elementAt(i);
+  }
 
-void put(User user){
-if(user == null){
-return;
-}
+  void put(User user) {
+    if (user == null) {
+      return;
+    }
 
-    if (user.id != null && !user.id.trim().isEmpty && _items.containsKey(user.id)) {
+    if (user.id != null &&
+        !user.id.trim().isEmpty &&
+        _items.containsKey(user.id)) {
       _items.update(user.id, (_) => User(id: user.id, name: user.name, email: user.email, avatarUrl: user.avatarUrl));
     } else {
       final id = Random().nextDouble().toString();
@@ -208,26 +210,29 @@ return;
         name: user.name,
         email: user.email,
         avatarUrl: user.avatarUrl,
-      ),
-      );
+      ));
     }
     notifyListeners();
+  }
+
+  void remove(User user) {
+    if (user?.id != null) {
+      _items.remove(user.id);
+      notifyListeners();
+    }
+  }
 }
-void remove(User user){
-if (user?.id != null) {
-_items.remove(user.id);
-notifyListeners();
-}
-}
-}
+
 
 3. UserForm Widget
    O UserForm é um widget que permite adicionar ou editar um usuário. Ele contém um formulário com campos para nome, e-mail e URL do avatar.
 
 Código: lib/views/user_form.dart
 
-dart
-Copy code
+```
+
+```dart
+
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -323,13 +328,14 @@ Widget build(BuildContext context) {
       );
 }
 }
+```
 
 4. UserList Widget
    O UserList exibe a lista de usuários usando o ListView.builder e permite a navegação para o formulário de usuário para adicionar novos usuários.
 
 Código: lib/views/user_list.dart
 
-dart
+``` dart
 Copy code
 
 import 'package:flutter/material.dart';
@@ -374,6 +380,7 @@ itemBuilder: (ctx, i) => UserTile(users.byIndex(i), textStyle: TextStyle(fontSiz
 );
 }
 }
+```
 
 ## Trechos de Código Relevantes
 Alguns trechos de código relevantes para entender a estrutura e lógica do projeto:
