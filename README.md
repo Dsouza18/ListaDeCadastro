@@ -26,7 +26,7 @@ Certifique-se de ter os seguintes pré-requisitos instalados no seu sistema:
 
    ```bash
    git clone https://github.com/flutter/flutter.git
-
+   ```
 
 
 Certamente! Aqui está o README.md formatado:
@@ -56,32 +56,35 @@ Certifique-se de ter os seguintes pré-requisitos instalados no seu sistema:
 
    ```bash
    git clone https://github.com/flutter/flutter.git
-   
+   ```
 2. Adicione o Flutter ao seu PATH:
 
 Adicione o caminho para o diretório bin do Flutter ao seu PATH. Isso pode ser feito editando o arquivo de perfil do seu shell (por exemplo, ~/.bashrc, ~/.zshrc, ou ~/.bash_profile) e adicionando a seguinte linha:
 
-bash
+```bash
 Copy code
 export PATH="$PATH:`caminho/para/o/diretorio/flutter/bin`"
 Em seguida, execute o comando para aplicar as alterações:
+```
 
-bash
+```bash
 Copy code
 source ~/.bashrc
+```
 ou
-
+```
 bash
 Copy code
 source ~/.zshrc
-
+```
 3. Verifique a Instalação do Flutter:
 
 Execute o seguinte comando para verificar se o Flutter foi instalado corretamente:
 
-bash
+```bash
 Copy code
 flutter doctor
+```
 Siga as instruções fornecidas pelo comando flutter doctor para instalar quaisquer dependências adicionais necessárias.
 
 ## Desenvolvimento do Projeto
