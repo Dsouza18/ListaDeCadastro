@@ -61,28 +61,27 @@ Certifique-se de ter os seguintes pré-requisitos instalados no seu sistema:
 
 Adicione o caminho para o diretório bin do Flutter ao seu PATH. Isso pode ser feito editando o arquivo de perfil do seu shell (por exemplo, ~/.bashrc, ~/.zshrc, ou ~/.bash_profile) e adicionando a seguinte linha:
 
-```bash
 Copy code
+```bash
 export PATH="$PATH:`caminho/para/o/diretorio/flutter/bin`"
-Em seguida, execute o comando para aplicar as alterações:
 ```
+Em seguida, execute o comando para aplicar as alterações:
 
-```bash
 Copy code
+```bash
 source ~/.bashrc
 ```
 ou
-```
-bash
 Copy code
+```bash
 source ~/.zshrc
 ```
 3. Verifique a Instalação do Flutter:
 
 Execute o seguinte comando para verificar se o Flutter foi instalado corretamente:
 
-```bash
 Copy code
+```bash
 flutter doctor
 ```
 Siga as instruções fornecidas pelo comando flutter doctor para instalar quaisquer dependências adicionais necessárias.
@@ -94,9 +93,8 @@ Siga as instruções fornecidas pelo comando flutter doctor para instalar quaisq
 
 Código: lib/components/user_tile.dart
 
-``` dart
 Copy code
-
+``` dart
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:lista_de_cadastro/provider/users.dart';
