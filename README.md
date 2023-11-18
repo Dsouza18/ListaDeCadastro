@@ -385,8 +385,8 @@ itemBuilder: (ctx, i) => UserTile(users.byIndex(i), textStyle: TextStyle(fontSiz
 ## Trechos de Código Relevantes
 Alguns trechos de código relevantes para entender a estrutura e lógica do projeto:
 
-<p>lib/main.dart</p><br>
-<p>lib/routes/app.routes.dart</p>
+-lib/main.dart
+-lib/routes/app.routes.dart
 
 ## Imagens Ilustrativas
 
