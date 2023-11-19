@@ -5,33 +5,6 @@
 
 <h1 align="center">TRABALHO AVII-<br> Aplicativo lista de cadastro de usuário</h1>
 
-Este é um projeto simples de lista de cadastro desenvolvido em Flutter. A aplicação permite visualizar, adicionar, editar e excluir usuários.
-
-## Instalação do Flutter
-
-Este guia fornece instruções passo a passo para instalar o Flutter no seu sistema.
-
-### Pré-requisitos
-
-Certifique-se de ter os seguintes pré-requisitos instalados no seu sistema:
-
-- [Git](https://git-scm.com/)
-- [Flutter SDK](https://flutter.dev/docs/get-started/install)
-
-### Passos para a Instalação
-
-1. **Clone o Repositório do Flutter:**
-
-   Abra um terminal e execute o seguinte comando para clonar o repositório do Flutter:
-
-   ```bash
-   git clone https://github.com/flutter/flutter.git
-   ```
-
-
-Certamente! Aqui está o README.md formatado:
-
-markdown
 Copy code
 # Lista de Cadastro Flutter
 
