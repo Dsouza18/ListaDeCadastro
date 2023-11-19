@@ -391,7 +391,6 @@ Alguns trechos de código relevantes para entender a estrutura e lógica do proj
 
 ## Tela do aplicativo
 
-https://github.com/Dsouza18/ListaDeCadastro/assets/99992634/183de9a4-548c-4ce9-bda6-93e437f19525
 
 ## Links
 
