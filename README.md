@@ -5,7 +5,6 @@
 
 <h1 align="center">TRABALHO AVII-<br> Aplicativo lista de cadastro de usuário</h1>
 
-Copy code
 # Lista de Cadastro Flutter
 
 Este é um projeto simples de lista de cadastro desenvolvido em Flutter. A aplicação permite visualizar, adicionar, editar e excluir usuários.
@@ -34,18 +33,17 @@ Certifique-se de ter os seguintes pré-requisitos instalados no seu sistema:
 
 Adicione o caminho para o diretório bin do Flutter ao seu PATH. Isso pode ser feito editando o arquivo de perfil do seu shell (por exemplo, ~/.bashrc, ~/.zshrc, ou ~/.bash_profile) e adicionando a seguinte linha:
 
-Copy code
+
 ```bash
 export PATH="$PATH:`caminho/para/o/diretorio/flutter/bin`"
 ```
 Em seguida, execute o comando para aplicar as alterações:
 
-Copy code
 ```bash
 source ~/.bashrc
 ```
 ou
-Copy code
+
 ```bash
 source ~/.zshrc
 ```
@@ -53,7 +51,6 @@ source ~/.zshrc
 
 Execute o seguinte comando para verificar se o Flutter foi instalado corretamente:
 
-Copy code
 ```bash
 flutter doctor
 ```
@@ -66,7 +63,7 @@ Siga as instruções fornecidas pelo comando flutter doctor para instalar quaisq
 
 Código: lib/components/user_tile.dart
 
-Copy code
+
 ``` dart
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -310,7 +307,6 @@ Widget build(BuildContext context) {
 Código: lib/views/user_list.dart
 
 ``` dart
-Copy code
 
 import 'package:flutter/material.dart';
 import 'package:lista_de_cadastro/components/user_tile.dart';
