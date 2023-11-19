@@ -18,7 +18,7 @@ Certifique-se de ter os seguintes pré-requisitos instalados no seu sistema:
 - [Git](https://git-scm.com/)
 - [Flutter SDK](https://flutter.dev/docs/get-started/install)
 
-### Passos de Instalação
+### Passos para a Instalação
 
 1. **Clone o Repositório do Flutter:**
 
