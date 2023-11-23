@@ -194,13 +194,11 @@ class UsersProvider with ChangeNotifier {
   }
 }
 
-
+```
 3. UserForm Widget
    O UserForm é um widget que permite adicionar ou editar um usuário. Ele contém um formulário com campos para nome, e-mail e URL do avatar.
-
+   
 Código: lib/views/user_form.dart
-
-```
 
 ```dart
 
